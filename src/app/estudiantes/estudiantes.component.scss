@@ -1,0 +1,70 @@
+.fondo {
+  background-color: rgba(120, 158, 158, 0.432);
+}
+.nopaso {
+  background-color: red;
+}
+
+.paso {
+  background-color: green;
+}
+
+li {
+  list-style: none;
+}
+
+img
+ {
+   width: 100px;
+   height: 100px;
+   margin-left: 90px;
+
+ }
+
+ .agregarest {
+   margin: 60px;
+   justify-content: center;
+   text-align: center;
+   border: 1px solid black;
+   border: 3px;
+   background-color: rgba(255, 255, 0, 0.379);
+   padding: 40px;
+
+ }
+
+ .card {
+   margin: 15px;
+   color: white;
+   text-align: center;
+ }
+
+ .title {
+   font-style: italic;
+ }
+
+ h1 {
+   text-align: center;
+   margin: 20px;
+
+ }
+
+ h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.id {
+  color: black;
+}
+

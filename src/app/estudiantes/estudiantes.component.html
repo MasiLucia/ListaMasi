@@ -1,0 +1,27 @@
+<div class="fondo">
+
+<h1>Los estudiantes inscriptos en nuestra escuela son:</h1>
+<p class="title"> *se mostrarán en verde las tarjetas de los estudiantes aprobados y en rojo los desaprobados</p>
+
+<div *ngFor="let estudiante of estudiantes" class="center">
+<div class="card" style="width: 18rem;">
+  <img src="{{img}}" class="card-img-top" alt="..."> <p class="id"> ID: {{estudiante.id}}</p>
+  <div class="card-body" [ngClass]="estudiante.nota <5 ? 'nopaso' : 'paso'">
+    <h5 class="card-title"> Nombre: {{estudiante.nombre}}</h5>
+    <p class="card-text"> Curso: {{estudiante.curso | uppercase}}.</p>
+    <a href="#" class="btn btn-primary">Legajo</a>
+  </div>
+</div>
+</div>
+
+<div class="agregarest">
+  <h1>Nuevos estudiantes</h1>
+  <h2>El nombre se cargará al sistema</h2>
+<button class="btn btn-warning" (click)="agregarEst()"> Agregar</button>
+<input type="text" #nameInput [(ngModel)]="newEstudiante">
+<li *ngFor="let name of Estudiante">
+ {{name}}
+</li></div>
+</div>
+
+
